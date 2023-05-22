@@ -27,7 +27,15 @@
           <a class="logo link" href="./index.html"
             >Web<span class="light-them-part">Studio</span></a
           >
-          
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger-btn" width="32" height="22">
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link active" href="./index.html">Studio</a>
@@ -40,15 +48,6 @@
             </li>
           </ul>
         </nav>
-        <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="burger-btn" width="32" height="22">
-              <use href="./images/icons.svg#burger-icon"></use>
-            </svg>
-          </button>
         <address class="contacts">
           <ul class="contacts-nav list">
             <li class="contacts-item">
@@ -616,7 +615,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -684,7 +683,7 @@
           <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">

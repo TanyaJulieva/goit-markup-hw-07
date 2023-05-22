@@ -82,8 +82,10 @@ display: flex;
 
 .page-nav {
   display: flex;
-  margin-right: auto;
+  justify-content: space-between;
+  /* margin-right: auto; */
   align-items: center;
+  width: 396px;
 }
 
 .logo {
@@ -234,7 +236,7 @@ display: flex;
   padding: 188px 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
+  max-width: 428px;
 
   background-color: var(--dark-bg-color);
   background-image: linear-gradient(
@@ -1178,6 +1180,7 @@ text-align: center;
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
