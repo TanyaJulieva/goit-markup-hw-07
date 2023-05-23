@@ -74,6 +74,8 @@ body {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+    min-width: 320px;
 }
 
 .header-container {
@@ -203,6 +205,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-top: 0;
   }
 }
 
@@ -934,6 +937,12 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--white-txt-color);
+}
+
+@media screen and (max-width: 427px) {
+  .footer-form-field {
+    width: 290px;
+  }
 }
 
 @media screen and (min-width: 768px) {
