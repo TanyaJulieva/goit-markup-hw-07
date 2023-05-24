@@ -86,7 +86,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Strategy</h3>
-              <p class="text">
+              <p class="text advantages-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -98,7 +98,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Punctuality</h3>
-              <p class="text">
+              <p class="text advantages-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -110,7 +110,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Diligence</h3>
-              <p class="text">
+              <p class="text advantages-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -122,7 +122,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Technologies</h3>
-              <p class="text">
+              <p class="text advantages-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -136,14 +136,37 @@
           <h2 class="title">What are we doing</h2>
           <ul class="list about-list">
             <li class="about-list-item">
-              <img src="./images/about/img-1.jpg" alt="monitor" width="360" />
-            </li>
-            <li class="about-list-item">
-              <img src="./images/about/img-2.jpg" alt="phone" width="360" />
+              <img
+                class="image"
+                srcset="
+                  ./images/about/img-1_360.jpg,
+                  ./images/about/img-1_720.jpg 2x
+                "
+                src="./images/about/img-1_360.jpg"
+                alt="monitor"
+                width="360"
+              />
             </li>
             <li class="about-list-item">
               <img
-                src="./images/about/img-3.jpg"
+                class="image"
+                srcset="
+                  ./images/about/img-2_360.jpg,
+                  ./images/about/img-2_720.jpg 2x
+                "
+                src="./images/about/img-2_360.jpg"
+                alt="phone"
+                width="360"
+              />
+            </li>
+            <li class="about-list-item">
+              <img
+                class="image"
+                srcset="
+                  ./images/about/img-3_360.jpg,
+                  ./images/about/img-3_720.jpg 2x
+                "
+                src="./images/about/img-3_360.jpg"
                 alt="phone in hand"
                 width="360"
               />
@@ -686,19 +709,9 @@
     </div>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+      <button class="menu-toggle mob-close-btn js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
       <ul class="mobile-menu list">
@@ -713,15 +726,13 @@
         </li>
       </ul>
       <ul class="mobile-contacts list">
-        <li class="contacts-item">
+        <li class="mobile-contacts-item">
           <a class="phone-contact-link link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
         </li>
-        <li class="contacts-item">
-          <a
-            class="mail-contact-link link"
-            href="mailto:info@devstudio.com"
+        <li class="mobile-contacts-item">
+          <a class="mail-contact-link link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
@@ -779,11 +790,11 @@
     </div>
     <script src="./js/modal.js"></script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
